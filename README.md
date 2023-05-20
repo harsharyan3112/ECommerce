@@ -1,7 +1,7 @@
 # ECommerce
 ECommerce website made using spring boot, Thymeleaf, mySQL
 
-create database with name db in MySQL workbench and Set 
+After pulling the file create database with name db in MySQL workbench and Set 
 
     Username : root
     Password : root
