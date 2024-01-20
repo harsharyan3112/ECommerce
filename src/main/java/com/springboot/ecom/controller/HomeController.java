@@ -21,7 +21,7 @@ public class HomeController {
 	
 	@GetMapping({"/","/home"})
 	public String home(Model model) {
-		return "orderPlaced";
+		return "index";
 	}
 	
 	@GetMapping("/shop")
@@ -46,7 +46,9 @@ public class HomeController {
 		model.addAttribute("cartCount",GlobalData.cart.size());
 		return "viewProduct";
 	}
-	
-	
+	@GetMapping("/logout")
+	public String logout() {
+		return "login";
+	}
 	
 }

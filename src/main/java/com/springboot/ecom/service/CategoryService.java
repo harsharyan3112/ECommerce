@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
 import com.springboot.ecom.model.Category;
 import com.springboot.ecom.repository.CategoryRepository;
 
-import jakarta.persistence.Id;
-
 @Service
 public class CategoryService {
 	

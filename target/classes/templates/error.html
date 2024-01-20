@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Error Page</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f8f9fa;
+}
+
+.error-container {
+	text-align: center;
+}
+
+.error-image {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+	<div class="error-container">
+		<img th:src="@{/productImages/error.png}" width="400" height="400"
+			alt="Oh No Image" class="error-image">
+		<h1 class="display-4">Oh No! Something went wrong.</h1>
+		<p class="lead">We're sorry for the inconvenience. The page you
+			are looking for might be temporarily unavailable.</p>
+		<a class="btn btn-primary" href="#"
+			onclick="history.go(-1); return false;">Go Back</a>
+	</div>
+
+</body>
+
+</html>
